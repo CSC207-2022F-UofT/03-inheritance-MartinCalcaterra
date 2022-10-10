@@ -21,20 +21,12 @@ class BagMain {
             }
             else {
                 ((HandBag) currentBag).enhance();
-            }
 
-        }
-
-        if (double_enhance_handbags) {
-            for (Object currentBag: bags) {
-                if (currentBag instanceof CrossbodyBag) {
-                    ((CrossbodyBag) currentBag).enhance();
-                }
-                else {
+                if (double_enhance_handbags) {
                     ((HandBag) currentBag).enhance();
                 }
-
             }
+
         }
     }
 
